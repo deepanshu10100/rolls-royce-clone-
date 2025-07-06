@@ -1,0 +1,290 @@
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+
+.top-bar img {
+    height: 40px;
+}
+
+.top-bar span img
+{
+  height: 30px;
+}
+
+
+
+.top-bar span
+{
+    height: 40px;
+}
+
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.center-text h5 {
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.center-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+/* models of cars */
+.modelsofcars
+{
+background-size: cover;
+}
+
+.imgontxt
+{
+    margin-top: 15rem;
+    
+
+}
+
+.bigbutton
+{
+    height: 50px;
+    width: 350px;
+    border-radius: 45px;
+    background-color:transparent;
+    border: 1.6px solid #555760;
+    color: #555760;
+
+}
+
+.midbutton
+{
+    height: 50px;
+    width: 250px;
+    border-radius: 45px;
+    background-color:transparent;
+    border: 1.6px solid white;
+    color: white;
+
+}
+
+/* Default blur for all slides */
+.splide__slide {
+    filter: blur(4px);
+    transition: filter 0.6s ease;
+    transform: scale(0.95);
+  }
+  
+  /* Remove blur from the active (center) slide */
+  .splide__slide.is-active {
+    filter: none;
+    transform: scale(1.05); /* Optional zoom-in effect */
+    z-index: 1;
+    transition: .6s ease;
+  }
+
+  .hover-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* initially transparent */
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.hover-card:hover .hover-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* darkens image */
+    opacity: 1; /* reveals text */
+}
+
+
+/* form start */
+
+.form-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+  }
+
+  .form-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .form-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    border-radius: 0;
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: -20px;
+  }
+
+  .form-control:focus {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+  }
+
+  /* Animated underline */
+  .form-group {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .form-group::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00bfff;
+    transition: width 0.4s ease;
+  }
+
+  .form-control:focus + .form-group::after {
+    width: 100%;
+  }
+
+  /* Fix to make line animate correctly */
+  .form-group:focus-within::after {
+    width: 100%;
+  }
+
+  .form-check-input {
+    background-color: transparent;
+    border: 1px solid #999;
+  }
+
+  .form-check-input:checked {
+    background-color: #00bfff;
+    border-color: #00bfff;
+  }
+
+  .form-check-label {
+    margin-left: 5px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .checkbox-item {
+    flex: 1 1 200px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+  .form-group label {
+    margin-bottom: 0;
+  }
+
+
+  /* form end */
+
+  /* drop down */
+
+
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    color: white;
+  }
+
+  .form-control:focus {
+    border-color: #00bfff;
+    box-shadow: none;
+    transition: border-color 0.4s ease-in-out;
+  }
+
+  .form-label {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .toggle-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: #00bfff;
+    cursor: pointer;
+  }
+
+  .form-select {
+    background-color: #222;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+  }
+
+  .form-select:focus {
+    border-color: #00bfff;
+    box-shadow: none;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
